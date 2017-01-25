@@ -7,7 +7,6 @@ class Board
   end
 
   def show
-
     @grid.each do |col|
       col.each { |el| print (!el ? "#{BLANK}" : el) }
       print "\n"
