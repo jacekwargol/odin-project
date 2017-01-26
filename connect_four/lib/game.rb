@@ -9,6 +9,15 @@ class Game
     @board = Board.new
   end
 
+  def start_game
+    puts "Player 1, choose color:\n1.Black\n2.White"
+    until (player_choice = gets.chomp.to_i).between?(1, 2) do
+      puts "Incorrect choice. Choose color:\n1.Black\n2.White"
+    end
+
+    puts player_choice
+  end
+
   def add_disc(col, color)
     return nil if @board.grid[0][col]
     @board.grid.each_with_index do |row, i|

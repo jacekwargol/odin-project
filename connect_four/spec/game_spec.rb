@@ -29,4 +29,11 @@ describe Game do
       expect(game.add_disc(0, WHITE_DISC)).to eql(nil)
     end
   end
+
+  describe "#start_game" do
+    it "asks user to choose color" do
+      expect{game.start_game}.to output(
+      "Player 1, choose color:\n1.Black\n2.White\n").to_stdout
+    end
+  end
 end
