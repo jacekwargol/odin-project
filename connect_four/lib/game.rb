@@ -1,4 +1,4 @@
-require 'board'
+require_relative 'board'
 
 class Game
   attr_reader :board
@@ -9,13 +9,14 @@ class Game
     @board = Board.new
   end
 
-  def add_disc(col)
+  def add_disc(col, color)
+    return nil if @board.grid[0][col]
     @board.grid.each_with_index do |row, i|
       if @board.grid[i][col]
-        @board.grid[i-1][col] = WHITE_DISC
+        @board.grid[i-1][col] = color
         break
       end
-      @board.grid[i][col] = WHITE_DISC if i == 5
+      @board.grid[i][col] = color if i == 5
     end
   end
 end

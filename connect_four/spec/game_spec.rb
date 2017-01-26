@@ -10,15 +10,23 @@ describe Game do
   end
 
   describe "#add_disc" do
-    it "given column it changes first blank field" do
-      game.add_disc(0)
-      game.add_disc(0)
-      game.add_disc(1)
-      game.board.show
+    it "adds disc to empty column" do
+      game.add_disc(0, WHITE_DISC)
       expect(game.board.grid[5][0]).to eql(WHITE_DISC)
-      expect(game.board.grid[4][0]).to eql(WHITE_DISC)
+    end
+    it "it adds disc to non-empty column" do
+      game.add_disc(0, WHITE_DISC)
+      game.add_disc(0, BLACK_DISC)
+      game.add_disc(1, WHITE_DISC)
+      expect(game.board.grid[5][0]).to eql(WHITE_DISC)
+      expect(game.board.grid[4][0]).to eql(BLACK_DISC)
       expect(game.board.grid[5][1]).to eql(WHITE_DISC)
-      expect(game.board.grid[4][1]).to eql(nil)
+    end
+    it "returns nil if adding to full column" do
+      6.times do
+        game.add_disc(0, WHITE_DISC)
+      end
+      expect(game.add_disc(0, WHITE_DISC)).to eql(nil)
     end
   end
 end
