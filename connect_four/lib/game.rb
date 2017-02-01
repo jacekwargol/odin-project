@@ -4,6 +4,7 @@ class Game
   attr_reader :board
   WHITE_DISC = "\u26AA"
   BLACK_DISC = "\u26AB"
+  @player1 = 
 
   def initialize
     @board = Board.new
