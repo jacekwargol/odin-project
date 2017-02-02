@@ -8,6 +8,7 @@ body {
   height: 100%;
   background-color: grey;
   font-family: 'Roboto', sans-serif;
+  font-size: 13px;
 }
 
 .nav-top {
@@ -54,15 +55,19 @@ body {
 
 .title, .description, .comments {
   padding: 10px 15px 15px 15px;
+  background-color: white;
+  margin-top: 10px;
 }
 
 .title {
   display: block;
-  margin-top: 10px;
-  background-color: white;
+}
+.title > p {
+  font-size: 20px;
 }
 
 .author-info {
+  margin-top: 10px;
   overflow: auto;
 }
 .author-info img {
@@ -90,11 +95,31 @@ body {
   margin-left: -4px;
 }
 
+.actions {
+  margin-top: 5px;
+}
 .actions ul {
   list-style: none;
 }
 .actions li {
   display: inline-block;
+}
+
+
+.description p:first-child {
+  font-weight: bold;
+}
+.description p:nth-child(2) {
+  margin: 5px 0 20px 0;
+}
+.description div {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 11px;
+}
+.description a {
+  text-decoration: none;
+  color: grey;
 }
 
 .suggestions {
