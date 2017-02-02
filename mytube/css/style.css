@@ -46,16 +46,23 @@ body {
 .video .player {
   margin-top: 10px;
   background-color: blue;
-  height: 100px;
+  height: 480px;
 }
 
 .video .title {
+  display: block;
   margin-top: 10px;
   height: 100px;
   background-color: white;
 }
+.video .title img, .video .title p {
+  display: inline-block;
+  float: left;
+}
 
 .suggestions {
+  display: block;
+
   width: 20%;
   height: 1000px;
   float: right;
