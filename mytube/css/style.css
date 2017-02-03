@@ -163,11 +163,12 @@ button {
 
 .suggestions {
   display: block;
-  width: 20%;
+  width: 24%;
   float: right;
   margin-top: 10px;
-  margin-right: 14.5%;
+  margin-right: 10.5%;
   background: white;
+  padding: 15px 10px;
 }
 .suggestions ul {
   list-style: none;
@@ -178,5 +179,24 @@ button {
 }
 .suggestions li {
   overflow: auto;
-  padding: 15px 15px 0 15px;
+  padding: 15px 0 0 15px;
+}
+
+.suggestions ul > span {
+  font-weight: bold;
+  color: black;
+}
+.suggestions ul > span i {
+  margin-left: 10px;
+}
+.suggestions ul > hr {
+  margin-top: 15px;
+}
+
+.suggestions h3 {
+  font-size: 14px;
+  font-weight: normal;
+}
+.suggestions p {
+  color: #8E8E8E;
 }
