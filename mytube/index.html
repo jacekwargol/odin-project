@@ -10,17 +10,26 @@
 </head>
 <body>
   <div class="nav-top">
-    <div class="nav-left">
-      <a href="#"><i class="fa fa-bars nav-btn" aria-hidden="true"></i></a>
+    <ul>
+    <li class="nav-left">
+      <a href="#"><i class="fa fa-bars nav-bars" aria-hidden="true"></i></a>
+    </li>
+    <li class="nav-left">
       <a href="#"><img class="nav-logo" src="images/logo.png"></a>
-    </div>
-    <form>
-      <input type="text" name="search" placeholder="Search">
-      <input type="submit" value="search">
-    </form>
-    <div class="nav-right">
-      <i class="fa fa-bell-o" aria-hidden="true"></i>
-    </div>
+    </li>
+    <li class="search">
+      <form>
+        <input class="search-field" type="text" name="search" placeholder="Search">
+        <!-- <a class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></a> -->
+        <button type="button" name="button" class="search-btn"><i class="fa fa-lg fa-search" aria-hidden="true"></i></button>
+      </form>
+    </li>
+    <li class="float-right">
+      <button type="button" name="button" class="sign-in">Sign in</button>
+    </li>
+    <li class="float-right">
+      <a href="#"><i class="fa fa-upload nav-upload" aria-hidden="true"></i></a>
+    </li>
   </div>
   <div class="video">
     <div class="player">

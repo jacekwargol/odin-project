@@ -6,35 +6,74 @@
 
 body {
   height: 100%;
-  background-color: grey;
+  background-color: #F1F1F1;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
 }
+
+hr {
+  border-top: 1px solid #C6C6C6;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+}
+
 
 .nav-top {
   width: 100%;
   height: 50px;
   background: white;
-  padding: 15px 15px;
-  text-align: center;
+  padding: 10px 35px;
+}
+.nav-top ul {
+  list-style: none;
 }
 
 .nav-left {
   float: left;
 }
-.nav-right {
-  float: right;
+
+.nav-top a:first-child {
+  font-size: 1.1em;
 }
-.nav-logo {
-  width: 72px;
-  height: 30px;
-}
-.nav-btn {
+.nav-bars, .nav-upload {
   color: grey;
-  width: 50px;
-  height: 50px;
-  height: 100%;
+  margin-right: 15px;
+  margin-top: 10px;
 }
+
+.search {
+  display: inline-block;
+  width: 700px;
+  margin-left: 95px;
+}
+.search-field {
+  padding-left: 5px;
+  height: 30px;
+  width: 590px;
+}
+.search-btn {
+  display: inline-block;
+  height: 30px;
+  width: 65px;
+  background-color: #F8F8F8;
+  color: #B8B8B8;
+  border: 1px solid #C6C6C6;
+  margin-left: -4px;
+  border-radius: 0;
+}
+
+.sign-in {
+  height: 30px;
+  width: 55px;
+  background-color: #126DB3;
+  color: white;
+  border: none;
+
+}
+
 
 .float-right {
   float: right;
@@ -90,7 +129,7 @@ body {
   border: none;
 }
 .subscribe span {
-  border: 1px solid grey;
+  border: 1px solid #C6C6C6;
   padding: 4px 4px 3px 4px;
   margin-left: -4px;
 }
@@ -127,7 +166,7 @@ body {
   width: 20%;
   float: right;
   margin-top: 10px;
-  margin-right: 10%;
+  margin-right: 14.5%;
   background: white;
 }
 .suggestions ul {
