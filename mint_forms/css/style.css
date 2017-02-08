@@ -5,41 +5,60 @@ body, div, nav, header, footer, p, a {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 40px 25% 100px 25%;
+  font-family: 'Roboto', sans-serif;
+  padding: 60px 30% 100px 30%;
 }
+
 
 .float-right {
   float: right;
 }
 
 
-
 .container {
-  background: grey;
-}
-.container-left {
-  background: red;
-}
-.container-right {
-  background: blue;
+  padding: 25px;
+  font-size: 14px;
 }
 
 .container div {
   display: inline-block;
+  height: 540px;
 }
-.container-right {
-  width: 30%;
-  float: right;
-  font-size: 14px;
-}
-
 
 
 .container-left{
+  height: 100%;
   width: 70%;
-  padding: 25px;
+  border-right: 1px solid #d8d8d8;
+  margin-right: 15px;
 }
+
+.container-left h1 {
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.sign-up input {
+  margin-bottom: 15px;
+}
+.sign-up button {
+  display: block;
+  background-color: #45CAE6;
+  border: none;
+  border-radius: 3px;
+  width: 110px;
+  height: 35px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
+}
+
+.sign-up input[type="checkbox"] {
+  width: 19px;
+  height: 19px;
+}
+
+
 .user-info {
   border: none;
   margin: 0;
@@ -51,6 +70,28 @@ body {
   margin-bottom: 15px;
 }
 
-.sign-up button {
-  display: block;
+.user-info input {
+  width: 320px;
+  height: 34px;
+  border-radius: 3px;
+  border: 1px solid #d8d8d8;
 }
+
+
+.container-right {
+  width: 26%;
+  float: right;
+  padding-left: 15px;
+  background-color: #F5F5F5;
+}
+.container-right h3 {
+  text-align: center;
+}
+
+.container footer {
+  font-size: 12px;
+}
+ .container footer a {
+   text-decoration: none;
+   color: #45CAE6;
+ }
