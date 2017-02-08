@@ -2,9 +2,56 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Mint</title>
   </head>
   <body>
-
+    <header>
+      <a href="#"><img src="images/logo-large.png" alt="logo"></a>
+      <a href="#" class="float-right">Log in</a>
+      <a href="#" class="float-right">Sign in</a>
+    </header>
+    <div class="container">
+      <div class="container-left">
+        <h1>See all your finances in one place &amp; create a budget</h1>
+        <form class="sign-up" action="index.html" method="post">
+          <fieldset class="user-info">
+            <label>
+              <span>Your Email</span>
+              <input type="email" name="email" value="">
+            </label>
+            <label>
+              <span>Confirm Email</span>
+              <input type="email" name="email-confirm" value="">
+            </label>
+            <label>
+              <span>Password</span>
+              <input type="password" name="password" value="">
+            </label>
+            <label>
+              <span>Confirm Password</span>
+              <input type="password" name="password-confirm" value="">
+            </label>
+          </fieldset>
+            <input type="checkbox" name="remember-me" value="">
+            <span>Remember me</span>
+            <button>sign up</button>
+        </form>
+      </div>
+      <div class="container-right">
+        <h3>Why you-ll love it</h3>
+        <ul>
+          <li>See</li>
+          <li>Set</li>
+          <li>Find</li>
+          <li>Stay</li>
+        </ul>
+      </div>
+      <footer>
+        <p>By clicking Sign Up you agree to our
+          <a href="#">Terms of Use</a>
+          and <a href="#">Privacy Statement</a></p>
+      </footer>
+    </div>
   </body>
 </html>

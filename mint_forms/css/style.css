@@ -1,0 +1,56 @@
+body, div, nav, header, footer, p, a {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 40px 25% 100px 25%;
+}
+
+.float-right {
+  float: right;
+}
+
+
+
+.container {
+  background: grey;
+}
+.container-left {
+  background: red;
+}
+.container-right {
+  background: blue;
+}
+
+.container div {
+  display: inline-block;
+}
+.container-right {
+  width: 30%;
+  float: right;
+  font-size: 14px;
+}
+
+
+
+.container-left{
+  width: 70%;
+  padding: 25px;
+}
+.user-info {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-info label, .user-info input, .user-info span {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.sign-up button {
+  display: block;
+}
