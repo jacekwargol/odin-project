@@ -5,6 +5,12 @@
 }
 
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
 .float-left {
   float: left;
 }
@@ -13,11 +19,16 @@
 }
 
 
-#nav-top {
-  width: 100%;
+.container, #nav-top, .slider {
+  background: red;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.fixed-top {
   position: fixed;
   top: 0;
-  height: 50px;
+  width: 100%;
 }
 
 #nav-top ul {
@@ -31,7 +42,31 @@
   display: inline-block;
 }
 
+.slider ul {
+  list-style: none;
+}
 
-.slider {
-  margin-top: 50px;
+.slider li {
+  width: 240px;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.slider img {
+  width: 65px;
+  height: 65px;
+}
+
+.slider h1 {
+  font-size: 9px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.slider span {
+  font-size: 13px;
+}
+
+
+article {
+  margin-top: 200px;
 }
