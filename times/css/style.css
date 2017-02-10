@@ -9,7 +9,10 @@ a {
   text-decoration: none;
   color: black;
 }
-
+ul {
+  list-style: none;
+  overflow: hidden;
+}
 
 .float-left {
   float: left;
@@ -97,4 +100,22 @@ a {
 .article p.float-left {
   width: 60%;
   margin: 0 0 30px 100px;
+}
+
+
+.theory {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.theory img {
+  float: left;
+  position: absolute;
+  z-index: -1;
+}
+
+.theory li {
+  width: 250px;
+  margin: 200px 20px 0 0;
 }
