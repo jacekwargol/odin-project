@@ -20,7 +20,6 @@ a {
 
 
 .container, #nav-top, .slider {
-  background: red;
   width: 85%;
   margin: 0 auto;
 }
@@ -29,10 +28,10 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: white;
 }
 
 #nav-top ul {
-  background-color: yellow;
   list-style: none;
   padding: 10px 15px;
   text-align: center;
@@ -66,7 +65,36 @@ a {
   font-size: 13px;
 }
 
-
-article {
+.container {
+  border: solid 1px grey;
   margin-top: 200px;
+}
+
+
+.article {
+  margin: 0 auto;
+  width: 1125px;
+  overflow: hidden;
+}
+
+
+.comments {
+  width: 25%;
+}
+
+.article-header ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+.article img {
+  width: 1125px;
+}
+.article figure {
+  margin-bottom: 30px;
+}
+
+.article p.float-left {
+  width: 60%;
+  margin: 0 0 30px 100px;
 }
