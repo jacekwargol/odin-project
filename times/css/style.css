@@ -34,6 +34,11 @@ ul {
   background-color: white;
 }
 
+
+#nav-top {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
 #nav-top ul {
   list-style: none;
   padding: 10px 15px;
@@ -42,6 +47,30 @@ ul {
 
 #nav-top li {
   display: inline-block;
+  margin-right: 20px;
+}
+
+#nav-top button {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#nav-top li.float-left button {
+  background: white;
+  border: 1px solid grey;
+}
+
+#nav-top li.float-right button {
+  background-color: #4D7B9F;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+
+.slider {
+  border: 1px solid grey;
 }
 
 .slider ul {
@@ -50,13 +79,15 @@ ul {
 
 .slider li {
   width: 240px;
-  border-left: 1px solid grey;
+  height: 75px;
   border-right: 1px solid grey;
+  padding: 5px;
 }
 
 .slider img {
   width: 65px;
   height: 65px;
+  margin-right: 5px;
 }
 
 .slider h1 {
@@ -70,7 +101,7 @@ ul {
 
 .container {
   border: solid 1px grey;
-  margin-top: 200px;
+  margin-top: 127px;
 }
 
 
