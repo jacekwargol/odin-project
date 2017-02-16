@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 a {
   text-decoration: none;
   color: black;
@@ -101,39 +100,87 @@ ul {
 
 .container {
   border: solid 1px grey;
-  margin-top: 127px;
+  margin-top: 128px;
+  padding-top: 3px;
+  box-shadow: -1px 3px 5px grey;
 }
 
 
 .article {
+  border-top: 1px solid black;
   margin: 0 auto;
   width: 1125px;
   overflow: hidden;
+  padding-top: 40px;
 }
 
-
-.comments {
-  width: 25%;
+.article h1 {
+  text-transform: capitalize;
 }
-
 .article-header ul {
   overflow: hidden;
   list-style: none;
 }
 
+.article-header .share-icons li {
+  padding: 10px;
+}
 .article img {
   width: 1125px;
 }
 .article figure {
   margin-bottom: 30px;
 }
+.article figcaption {
+  width: 50%;
+  font-size: 14px;
+}
+.aricle figcaption .author {
+  font-size: 11px;
+}
 
 .article p.float-left {
-  width: 60%;
-  margin: 0 0 30px 100px;
+  width: 50%;
+  margin: 0 0 30px 75px;
+  font-size: 17px;
+  line-height: 26px;
 }
 
 
+.comments {
+  width: 30%;
+  margin-right: 25px;
+}
+
+.comments footer, .comments-header {
+  font-size: 12px;
+  color: #326891;
+  text-transform: uppercase;
+}
+.comments-header {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.comment-header {
+  margin: 0;
+  font-weight: bolder;
+  color: black;
+}
+.comment-header span {
+  font-size: 12px;
+  color: #999;
+}
+
+.comments li {
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #666;
+}
+.comments footer {
+  font-size: 10px;
+  margin-top: 5px;
+}
 .theory {
   width: 100%;
   overflow: hidden;
