@@ -35,8 +35,10 @@ ul {
 
 
 #nav-top {
+  height: 50px;
   border-left: 1px solid grey;
   border-right: 1px solid grey;
+  padding: auto;
 }
 #nav-top ul {
   list-style: none;
@@ -52,9 +54,13 @@ ul {
 #nav-top button {
   text-transform: uppercase;
   font-weight: bold;
-  padding: 10px;
+  padding: 7px;
+  font-size: 11px;
 }
 
+#nav-top .float-left {
+  margin-left: 70px;
+}
 #nav-top li.float-left button {
   background: white;
   border: 1px solid grey;
@@ -66,7 +72,12 @@ ul {
   border: none;
   border-radius: 3px;
 }
-
+ #nav-top .sections-btn {
+   margin-left: 0;
+   position: absolute;
+   left: 130px;
+   z-index: 1;
+ }
 
 .slider {
   border: 1px solid grey;
@@ -196,4 +207,7 @@ ul {
 .theory li {
   width: 250px;
   margin: 200px 20px 0 0;
+}
+.theory li:nth-child(1), .theory li:nth-child(5) {
+  margin-right: 50px;
 }
